@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+    task-2 (Vijaya kumar G)
+Create a class called BankAccount with private properties:
+
+- balance
+- accountNumber
+
+And public methods:
+- deposit(amount): adds amount to balance
+- withdraw(amount): subtracts amount from balance
+- getBalance(): returns balance
+
+    -->
+    <h2>open the console for output</h2>
+    <script>
+       class bankAccount{
+            #balance
+            #accountNumber
+            constructor(balance,accountNumber){
+                this.#balance=balance
+                this.#accountNumber=accountNumber
+
+            }
+          set  deposit(amount){
+                this.#balance+=amount;
+            }
+           set withdraw(amount){
+                this.#balance-=amount;
+            }
+            get getBalance(){
+                return this.#balance
+            }
+
+        }
+        let ac=new bankAccount(2000,2012345)
+        ac.deposit=1000;
+        ac.withdraw=2000;
+        // console.log(ac.deposit);
+       console.log( ac.getBalance);
+
+
+
+    </script>
+</body>
+</html>
